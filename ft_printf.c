@@ -6,7 +6,7 @@
 /*   By: fiselann <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 14:39:43 by fiselann          #+#    #+#             */
-/*   Updated: 2022/02/16 13:39:20 by fiselann         ###   ########.fr       */
+/*   Updated: 2022/02/16 15:33:43 by fiselann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	ft_parse(va_list buffer, char tag)
 	else if (tag == 'p')
 		return (ft_putptr(va_arg(buffer, size_t), 0));
 	else if (tag == 'x')
-		return (ft_puthex(va_arg(buffer, size_t), "0123456789abcdef", 0));
+		return (ft_puthex(va_arg(buffer, unsigned int), "0123456789abcdef", 0));
 	else if (tag == 'X')
-		return (ft_puthex(va_arg(buffer, size_t), "0123456789ABCDEF", 0));
+		return (ft_puthex(va_arg(buffer, unsigned int), "0123456789ABCDEF", 0));
 	return (0);
 }
 
@@ -54,8 +54,6 @@ int	ft_printf(const char *format, ...)
 				len += ft_parse(buffer, format[i + 1]);
 				i++;
 			}
-			else
-				printf("INPUT ERROR\n");
 		}
 		i++;
 	}
