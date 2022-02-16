@@ -16,14 +16,14 @@ This project is part off [19school42's](https://www.facebook.com/19network42/) c
 
 ## My current[^1] approach:
 - [x] ~~Make it possible to use my [Libft](https://github.com/FionaSelanno/libft42) library~~ [^3]
-- [ ] Print every char off `format` untill it encounters '%'
-- [ ] When it encounters a '%' check for possible conversions: `cspdiuxX%`. 
-- [ ] Retreive the right argument to be able to do the conversion.
-- [ ] Create methods to do the parsing of each conversion.
-- [ ] Write the result on the stdout
-- [ ] Keep looping over `format` to print remaining chars or do further parsings untill reaching `'\0'`.
-- [ ] Put everything in my `libftprintf` library.
-- [ ] Test code with online unit tests.
+- [x] Print every char off `format` untill it encounters '%'.
+- [x] When it encounters a '%' check for possible conversions: `cspdiuxX%`. 
+- [x] Retreive the right argument to be able to do the conversion.
+- [x] Create methods to do the parsing of each conversion.
+- [x] Write the result on the stdout
+- [x] Keep looping over `format` to print remaining chars or do further parsings untill reaching `'\0'`.
+- [x] Put everything in my `libftprintf` library.
+- [x] Test code with online unit tests.
 - [ ] **BONUS**: Handle other conversion specifications[^2] (flags, width, precision, lenght modifier);
 
 [^1]: Before I start every project, I break down the project into substeps. It's my first thought on how to approach this. Off course my approach can change during the making off. Whenever I add / edit a step I' ll make a footnote on why I did it, so that you can keep up with my way of thinking.
